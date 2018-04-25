@@ -1,10 +1,10 @@
 // const data = require('./data');
-const loadFunction = require('./messages');
+const loadMessage = require('./chatty');
 // const chattyDom = require('chattyDom');
 
 const onLoadFunction = function () {
-  const messageData = JSON.parse(this.responseText).messages;
-  console.log('messageData', messageData);
+  const messagesData = JSON.parse(this.responseText);
+  console.log('messagesData', messagesData);
 };
 
 const failToLoad = function () {
@@ -12,10 +12,7 @@ const failToLoad = function () {
 };
 
 const initializer = () => {
-  loadFunction(onLoadFunction, failToLoad);
+  loadMessage(onLoadFunction, failToLoad);
 };
 
-onLoadFunction();
-module.exports = {
-  initializer,
-};
+module.exports = initializer;
