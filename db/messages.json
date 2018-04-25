@@ -1,0 +1,23 @@
+{
+	"messages": [{
+			"id": "message1",
+			"message": "If you go from a queen size bed to a king size bed you will have more bed room but less bedroom."
+		},
+		{
+			"id": "message2",
+			"message": "The other day I tried to catch some fog..... but I mist."
+		},
+		{
+			"id": "message3",
+			"message": "When you fart it's almost the same as a burp."
+		},
+		{
+			"id": "message4",
+			"message": "If you spell Joe semi-fast it sounds like you are saying Jerry with a speech impediment."
+		},
+		{
+			"id": "message5",
+			"message": "Have you heard of the new corduroy pillows?  They are really making headlines."
+		}
+	]
+}
