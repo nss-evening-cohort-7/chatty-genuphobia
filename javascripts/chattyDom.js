@@ -1,5 +1,3 @@
-// const data = require('./data');
-
 // const events = require('./events');
 
 const messagesOutputDiv = document.getElementById('message-container');
