@@ -1,5 +1,3 @@
-// const events = require('./events');
-
 const messagesOutputDiv = document.getElementById('message-container');
 
 const domStrang = (messages) => {
@@ -7,14 +5,16 @@ const domStrang = (messages) => {
   messages.forEach((message) =>
   {
     domStrang += `<div id="msgs">`;
-    domStrang += `<p id="${message.id}">${message.message}</p>`;
-    domStrang += `<button id="delete-btn">Delete</button>`;
+    domStrang += `<p>${message.message}</p>`;
+    domStrang += `<button id="${message.id}" class="delete-btn">Delete</button>`;
     domStrang += `</div>`;
   });
   return domStrang;
 };
 
 const printMessagesToDom = (messages) => {
+  // each time this line runs it wipes out the messagesOutputDiv and replaces
+  // its contents with what comes back from the domString function
   messagesOutputDiv.innerHTML = domStrang(messages);
 };
 

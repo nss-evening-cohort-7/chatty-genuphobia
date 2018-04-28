@@ -6,9 +6,12 @@ const eventButtons = require('./eventButtons');
 const onLoadFunction = function () {
   // the line below is parsing the data
   const messagesData = JSON.parse(this.responseText).messages;
-  // this is choosing which functions that were exported in data.js by using the dot
+  // this is setting the messageArray in data.js equal to messagesData
   data.setMessages(messagesData);
+  // this writes my array of messages to the dom
   chattyDom(messagesData);
+  // attaches the delete event listener to each delete button
+  eventButtons.attachDeleteEvents();
 };
 
 const failToLoad = function () {
@@ -17,7 +20,7 @@ const failToLoad = function () {
 
 const initializer = () => {
   loadMessage(onLoadFunction, failToLoad);
-  eventButtons();
+  eventButtons.clearBtn();
 };
 
 module.exports = initializer;
