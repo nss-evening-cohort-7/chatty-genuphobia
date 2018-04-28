@@ -42,7 +42,9 @@ const getUserInput = (newMessagesArray) => {
     if (e.key === 'Enter') {
       console.log(userInput.value);
       data.addUserMessages(userInput.value);
-      chattyDom(userInput);
+      const newMessagesArray = data.getMessages();
+      chattyDom(newMessagesArray);
+      attachDeleteEvents();
     }
   });
 };
