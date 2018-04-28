@@ -6,8 +6,8 @@ const domStrang = (messages) => {
   messages.forEach((message) =>
   {
     domStrang += `<div id="msgs">`;
-    domStrang += `<p id="${message.id}">${message.message}</p>`;
-    domStrang += `<button class="delete-btn">Delete</button>`;
+    domStrang += `<p>${message.message}</p>`;
+    domStrang += `<button id="${message.id}" class="delete-btn">Delete</button>`;
     domStrang += `</div>`;
   });
   return domStrang;

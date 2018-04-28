@@ -8,6 +8,10 @@ const getMessages = () => {
   return messagesArray;
 };
 
+const removeMessage = (id) => {
+  console.log('data.js', id);
+};
+
 // function remove (array, element) {
 //     const index = array.indexOf(element);
 
@@ -19,4 +23,5 @@ const getMessages = () => {
 module.exports = {
   setMessages,
   getMessages,
+  removeMessage,
 };
