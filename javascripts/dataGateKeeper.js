@@ -12,6 +12,7 @@ const onLoadFunction = function () {
   chattyDom(messagesData);
   // attaches the delete event listener to each delete button
   eventButtons.attachDeleteEvents();
+  eventButtons.getUserInput();
 };
 
 const failToLoad = function () {

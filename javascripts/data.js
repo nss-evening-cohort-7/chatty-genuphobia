@@ -1,4 +1,6 @@
+// this file should not touch the dom at all its like a fake database. You do not pull in dom stuff but pass it in instead.
 let messagesArray = [];
+let counter = 6;
 
 const setMessages = (messArray) => {
   messagesArray = messArray;
@@ -19,8 +21,19 @@ const removeMessage = (passedId) => {
   }
 };
 
+const addUserMessages = (userInput) => {
+  messagesArray.push({
+    id: `message${counter}`,
+    message: `${userInput}`,
+  }
+  );
+  counter++;
+  console.log(messagesArray);
+};
+
 module.exports = {
   setMessages,
   getMessages,
   removeMessage,
+  addUserMessages,
 };
