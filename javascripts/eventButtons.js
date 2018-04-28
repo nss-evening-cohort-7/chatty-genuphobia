@@ -35,7 +35,31 @@ const clearBtn = () => {
   });
 };
 
+const userInput = document.getElementById('user-input');
+
+const getUserInput = (newMessagesArray) => {
+  userInput.addEventListener('keypress', function (e) {          console.log('key', e.key);
+    if (e.key === 'Enter') {
+      console.log(userInput.value);
+      data.addUserMessages(userInput.value);
+      const newMessagesArray = data.getMessages();
+      chattyDom(newMessagesArray);
+      attachDeleteEvents();
+    }
+  });
+};
+
+// const initializeChatListener = () => {
+//   const entryField = document.getElementById('chat-entry');
+//   entryField.addEventListener('keypress', e => {
+//     if (e.key === 'Enter' && entryField.value) {
+//       checkAddOrEdit(entryField);
+//     }
+//   });
+// };
+
 module.exports = {
   attachDeleteEvents,
   clearBtn,
+  getUserInput,
 };
