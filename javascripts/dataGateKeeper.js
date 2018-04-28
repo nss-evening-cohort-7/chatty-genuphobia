@@ -1,6 +1,7 @@
 const data = require('./data');
 const loadMessage = require('./chatty');
 const chattyDom = require('./chattyDom');
+const eventButtons = require('./eventButtons');
 
 const onLoadFunction = function () {
   // the line below is parsing the data
@@ -16,6 +17,7 @@ const failToLoad = function () {
 
 const initializer = () => {
   loadMessage(onLoadFunction, failToLoad);
+  eventButtons();
 };
 
 module.exports = initializer;
