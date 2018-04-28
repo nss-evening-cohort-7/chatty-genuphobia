@@ -8,17 +8,16 @@ const getMessages = () => {
   return messagesArray;
 };
 
-const removeMessage = (id) => {
-  console.log('data.js', id);
+const removeMessage = (passedId) => {
+  // loop over the messagesArray
+  for (let m = 0; m < messagesArray.length; m++) {
+    // if the id of the current index of the messageArray matches the id passed in
+    if (messagesArray[m].id === passedId) {
+      // cut out that index from messagesArray
+      messagesArray.splice(m, 1);
+    }
+  }
 };
-
-// function remove (array, element) {
-//     const index = array.indexOf(element);
-
-//     if (index !== -1) {
-//       array.splice(index, 1);
-//     }
-//   }
 
 module.exports = {
   setMessages,
