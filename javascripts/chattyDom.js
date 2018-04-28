@@ -1,5 +1,4 @@
-// const events = require('./events');
-
+const eventButtons = require('./eventButtons');
 const messagesOutputDiv = document.getElementById('message-container');
 
 const domStrang = (messages) => {
@@ -8,7 +7,7 @@ const domStrang = (messages) => {
   {
     domStrang += `<div id="msgs">`;
     domStrang += `<p id="${message.id}">${message.message}</p>`;
-    domStrang += `<button id="delete-btn">Delete</button>`;
+    domStrang += `<button class="delete-btn">Delete</button>`;
     domStrang += `</div>`;
   });
   return domStrang;
@@ -16,6 +15,7 @@ const domStrang = (messages) => {
 
 const printMessagesToDom = (messages) => {
   messagesOutputDiv.innerHTML = domStrang(messages);
+  eventButtons.messagesDelete();
 };
 
 module.exports = printMessagesToDom;
