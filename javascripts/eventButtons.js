@@ -2,6 +2,8 @@ const chattyDom = require('./chattyDom');
 const data = require('./data');
 // this returns an array of  every button with class of delete-btn
 const deleteButtons = document.getElementsByClassName('delete-btn');
+const wipeOutBtn = document.getElementById('clear-button');
+const clearBtnDiv = document.getElementById('message-container');
 
 // Delete Button
 const attachDeleteEvents = () => {
@@ -26,6 +28,14 @@ const messagesDelete = (e) => {
   attachDeleteEvents();
 };
 
+const clearBtn = () => {
+  wipeOutBtn.addEventListener('click', () => {
+    clearBtnDiv.innerHTML = '';
+    data.setMessages([]);
+  });
+};
+
 module.exports = {
   attachDeleteEvents,
+  clearBtn,
 };

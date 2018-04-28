@@ -20,6 +20,7 @@ const failToLoad = function () {
 
 const initializer = () => {
   loadMessage(onLoadFunction, failToLoad);
+  eventButtons.clearBtn();
 };
 
 module.exports = initializer;
