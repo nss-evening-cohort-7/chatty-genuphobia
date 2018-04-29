@@ -16,16 +16,29 @@
 
       <nav class="navbar-static-top">
         <div class="container-fluid">
-          <img src="https://christopherzoukis.com/imported-images/chatty-cathy.jpg">
-          <input type="text" id="user-input" placeholder="Enter message">
-          <button type="submit" id="clear-button" class="btn btn-default">Clear</button>
-        </div>
+          <div class="nav-row">
+            <div class="col-sm-3">
+              <img src="https://christopherzoukis.com/imported-images/chatty-cathy.jpg">
+            </div>
+            <div class="col-sm-9">
+              <h1>Chatter Box</h1>
+                <input type="text" id="user-input" placeholder="Enter message">
+                  <button type="submit" id="clear-button" class="btn btn-default">Clear</button>
+            </div>
+          </div> <!--end row-->
       </nav>
-  
-  <div class="checkboxes">
-    <input type="checkbox" id="dark">
-    <input type="checkbox" id="large">
-  </div>
+
+    <div class="row">
+      <div class="col-sm-3">
+      </div>
+      <div class="checkboxes col-sm-9">
+        <input type="checkbox" id="dark">
+        <input type="checkbox" id="large">
+      </div>
+    </div>
+  </div> <!--main container-->
+</div> <!--end container fluid-->
+
 
   <h1>Messages</h1>
   <div id="message-container">

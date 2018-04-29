@@ -11,3 +11,20 @@ body {
 .card {
   background-color: aquamarine
 }
+
+/* .nav-row {
+  padding: 20px;
+} */
+
+img {
+  border-radius: 50%;
+  width: 175px;
+  height: 175px;
+}
+
+#user-input {
+  padding: 20px;
+  background-color: rgb(248, 228, 197);
+  border-radius: 15px;
+  width: 50%;
+}
