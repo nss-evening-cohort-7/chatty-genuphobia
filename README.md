@@ -14,6 +14,14 @@
 4. Create a button to clear all messages, if there are no messages, the button should be disabled
 5. Messages should be displayed with a "Delete" button after it.
 
+## Screenshots
+![Webpage](https://raw.githubusercontent.com/nss-evening-cohort-7/chatty-genuphobia/readme-ls/screenshots/screenshot1.png)
+
+## Screenshots
+![Webpage](https://raw.githubusercontent.com/nss-evening-cohort-7/chatty-genuphobia/readme-ls/screenshots/screenshot2.png)
+## Screenshots
+![Webpage](https://raw.githubusercontent.com/nss-evening-cohort-7/chatty-genuphobia/readme-ls/screenshots/screenshot3.png)
+
 ## How To Run It
 Must have Node installed first
 ```
