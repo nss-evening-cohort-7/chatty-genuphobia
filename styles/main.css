@@ -15,17 +15,13 @@ h1 {
 }
 
 #message-container {
-  border: 1px solid red;
+  background-color: blanchedalmond;
   border-radius: 5%;
-  margin: 15px;
-}
-
-.card {
-  background-color: aquamarine
+  padding: 15px;
 }
 
 #msgs {
-  background-color: blue;
+  background-color: blanchedalmond;
 }
 
 /* .nav-row {
