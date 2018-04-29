@@ -28,7 +28,7 @@ const addUserMessages = (userInput) => {
   }
   );
   counter++;
-  console.log(messagesArray);
+  // console.log(messagesArray);
 };
 
 module.exports = {
