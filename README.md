@@ -1,6 +1,5 @@
 # Chatty Group Project
 
-
 ## Requirements
 * Use Bootstrap
 * Balanced GitHub contributions
@@ -34,7 +33,7 @@ This will show up in your browser at:
 `http://localhost:8080`
 
 ## Contributors:
-[Lola Simpson]("https://github.com/lolasimp")
-[Maken Hubbard]("https://github.com/MakenHubbard")
-[Alice Zaludova]("https://github.com/aliciazaludova")
+[Lola Simpson]("https://github.com/lolasimp"),
+[Maken Hubbard]("https://github.com/MakenHubbard"),
+[Alice Zaludova]("https://github.com/aliciazaludova"),
 [Amanda Mitchell]("https://github.com/AmandaM04")
