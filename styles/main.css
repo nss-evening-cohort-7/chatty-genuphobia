@@ -7,3 +7,7 @@ body {
   border-radius: 5%;
   margin: 15px;
 }
+
+.card {
+  background-color: aquamarine
+}
