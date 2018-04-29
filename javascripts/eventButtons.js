@@ -4,6 +4,8 @@ const data = require('./data');
 const deleteButtons = document.getElementsByClassName('delete-btn');
 const wipeOutBtn = document.getElementById('clear-button');
 const clearBtnDiv = document.getElementById('message-container');
+const darkCheckbox = document.querySelector('input[value="darkChng"]');
+const otherText = document.getElementById('message-container');
 
 // Delete Button
 const attachDeleteEvents = () => {
@@ -33,6 +35,16 @@ const clearBtn = () => {
     clearBtnDiv.innerHTML = '';
     data.setMessages([]);
   });
+};
+
+darkCheckbox.onchange = function () {
+  if (darkCheckbox.checked) {
+    otherText.style.backgroundColor = 'darkGrey';
+    otherText.style.color = 'white';
+  } else {
+    otherText.style.backgroundColor = 'white';
+    otherText.style.color = 'black';
+  }
 };
 
 module.exports = {
