@@ -51,9 +51,9 @@ const userInput = document.getElementById('user-input');
 
 const getUserInput = (newMessagesArray) => {
   userInput.addEventListener('keypress', function (e) {
-    // console.log('key', e.key);
+    console.log('key', e.key);
     if (e.key === 'Enter') {
-      // console.log(userInput.value);
+      console.log(userInput.value);
       data.addUserMessages(userInput.value);
       const newMessagesArray = data.getMessages();
       chattyDom(newMessagesArray);
