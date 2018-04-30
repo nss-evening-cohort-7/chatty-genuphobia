@@ -4,6 +4,8 @@ const data = require('./data');
 const deleteButtons = document.getElementsByClassName('delete-btn');
 const wipeOutBtn = document.getElementById('clear-button');
 const clearBtnDiv = document.getElementById('message-container');
+const darkCheckbox = document.querySelector('input[value="darkChng"]');
+const otherText = document.getElementById('message-container');
 
 // Delete Button
 const attachDeleteEvents = () => {
@@ -35,10 +37,21 @@ const clearBtn = () => {
   });
 };
 
+darkCheckbox.onchange = function () {
+  if (darkCheckbox.checked) {
+    otherText.style.backgroundColor = 'darkGrey';
+    otherText.style.color = 'white';
+  } else {
+    otherText.style.backgroundColor = 'blanchedalmond';
+    otherText.style.color = 'black';
+  }
+};
+
 const userInput = document.getElementById('user-input');
 
 const getUserInput = (newMessagesArray) => {
-  userInput.addEventListener('keypress', function (e) {          console.log('key', e.key);
+  userInput.addEventListener('keypress', function (e) {
+    console.log('key', e.key);
     if (e.key === 'Enter') {
       console.log(userInput.value);
       data.addUserMessages(userInput.value);
