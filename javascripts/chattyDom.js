@@ -10,7 +10,7 @@ const domStrang = (messages) => {
     domStrang += `<button id="${message.id}" class="delete-btn col-sm-1">Delete</button>`;
     domStrang += `</div>`;
   });
-    return domStrang;
+  return domStrang;
 };
 
 // const userDom = (userInput) => {
