@@ -6,11 +6,11 @@ const domStrang = (messages) => {
   messages.forEach((message) =>
   {
     domStrang += `<div id="msgs">`;
-    domStrang += `<p>${message.message}</p>`;
-    domStrang += `<button id="${message.id}" class="delete-btn">Delete</button>`;
+    domStrang += `<p class="col-sm-11">${message.message}</p>`;
+    domStrang += `<button id="${message.id}" class="delete-btn col-sm-1">Delete</button>`;
     domStrang += `</div>`;
   });
-  return domStrang;
+    return domStrang;
 };
 
 // const userDom = (userInput) => {
