@@ -1,10 +1,4 @@
 # Chatty Group Project
-Your group will be creating a chat application. The features your team will build have already been added to your backlog in the "projects" section of this repo. This application should demonstrate your skills in:
-- Modular code
-- Dependency chaining
-- Asynchronous code
-- DOM interaction
-- Debugging
 
 ## Requirements
 * Use Bootstrap
@@ -13,8 +7,41 @@ Your group will be creating a chat application. The features your team will buil
 * No Grunt errors
 * Use Browserify
 
-## Interacting With Your Product Owner
-Your group has been designated a product owner (one of the instructors). This product owner has the overall vision of the application and must approve your tickets before you start working on them. When you complete the MVP tickets in your backlog, you should reach out to your product owner to recieve tickets for additional features. Note that this project is often used as a portfolio project for students, so you and your team should push yourselves to get to the "game changer" bonus features, but only after you have a strong MVP.
+## Functionality Requirements
+1. 5 preloaded messages should appear in the message area when the page first loads
+2. Create an input field for a user to enter a message.
+3. When the return key is pressed in the message field, create a new message
+4. Create a button to clear all messages, if there are no messages, the button should be disabled
+5. Messages should be displayed with a "Delete" button after it.
 
+## Screenshots
+![Webpage](https://raw.githubusercontent.com/nss-evening-cohort-7/chatty-genuphobia/readme-ls/screenshots/screenshot1.png)
 
-Check out the [simple wireframe](https://app.moqups.com/chortlehoort/uGBbLbK46Y/view/page/a3bd0c733) for this application on Moqups.com. You can make your final interface as fancy as you like, but keep the general layout similar to the wireframe.
+## Screenshots
+![Webpage](https://raw.githubusercontent.com/nss-evening-cohort-7/chatty-genuphobia/readme-ls/screenshots/screenshot2.png)
+## Screenshots
+![Webpage](https://raw.githubusercontent.com/nss-evening-cohort-7/chatty-genuphobia/readme-ls/screenshots/screenshot3.png)
+
+## How To Run It
+Must have Node installed first
+```
+$ git clone git@github.com:nss-evening-cohort-7/chatty-genuphobia.git
+$ cd chatty-genuphobia/lib/
+$ npm install
+$ grunt
+```
+Then, in a seperate tab do the following
+```
+$ cd ../
+$ npm install http-server -g
+$ http-server -p 8080
+```
+
+This will show up in your browser at:
+`http://localhost:8080`
+
+## Contributors:
+[Lola Simpson]("https://github.com/lolasimp"),
+[Maken Hubbard]("https://github.com/MakenHubbard"),
+[Alice Zaludova]("https://github.com/aliciazaludova"),
+[Amanda Mitchell]("https://github.com/AmandaM04")
