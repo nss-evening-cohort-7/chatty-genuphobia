@@ -13,14 +13,23 @@
 3. When the return key is pressed in the message field, create a new message
 4. Create a button to clear all messages, if there are no messages, the button should be disabled
 5. Messages should be displayed with a "Delete" button after it.
+6. Dark theme checkbox, if chcecked changes background color grey and letter white.
+7. Text checkbox, if chceked enlarges text.
 
-## Screenshots
+## Screenshot 1
 ![Webpage](https://raw.githubusercontent.com/nss-evening-cohort-7/chatty-genuphobia/readme-ls/screenshots/screenshot1.png)
 
-## Screenshots
+## Screenshot 2
 ![Webpage](https://raw.githubusercontent.com/nss-evening-cohort-7/chatty-genuphobia/readme-ls/screenshots/screenshot2.png)
-## Screenshots
+
+## Screenshot 3
 ![Webpage](https://raw.githubusercontent.com/nss-evening-cohort-7/chatty-genuphobia/readme-ls/screenshots/screenshot3.png)
+
+## Screenshot 4
+![Webpage](https://raw.githubusercontent.com/nss-evening-cohort-7/chatty-genuphobia/ls-darktheme/screenshots/Screenshot4.png)
+
+## Screenshot 5
+![Webpage](https://raw.githubusercontent.com/nss-evening-cohort-7/chatty-genuphobia/ls-darktheme/screenshots/Screenshot5.png)
 
 ## How To Run It
 Must have Node installed first
