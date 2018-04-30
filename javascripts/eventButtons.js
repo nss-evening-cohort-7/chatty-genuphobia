@@ -5,6 +5,7 @@ const deleteButtons = document.getElementsByClassName('delete-btn');
 const wipeOutBtn = document.getElementById('clear-button');
 const clearBtnDiv = document.getElementById('message-container');
 const darkCheckbox = document.querySelector('input[value="darkChng"]');
+const largeText = document.querySelector('input[value="largTxt"]');
 const otherText = document.getElementById('message-container');
 
 // Delete Button
@@ -44,6 +45,14 @@ darkCheckbox.onchange = function () {
   } else {
     otherText.style.backgroundColor = 'blanchedalmond';
     otherText.style.color = 'black';
+  }
+};
+
+largeText.onchange = function () {
+  if (largeText.checked) {
+    otherText.style.fontSize = '40px';
+  } else {
+    otherText.style.fontSize = '30px';
   }
 };
 
