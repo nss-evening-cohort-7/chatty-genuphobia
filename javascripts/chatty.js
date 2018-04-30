@@ -1,3 +1,4 @@
+// This is the request for the data from the db file
 const loadMessages = (loadFunction, errorFunction) => {
   const myRequest = new XMLHttpRequest();
   myRequest.addEventListener('load', loadFunction);
@@ -6,4 +7,5 @@ const loadMessages = (loadFunction, errorFunction) => {
   myRequest.send();
 };
 
+// this line is exporting our request
 module.exports = loadMessages;
